@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pbocrud.DataMahasiswaController">
+    <children>
+        <TableView fx:id="mahasiswaTable" layoutX="25.0" layoutY="50.0" prefHeight="300.0" prefWidth="550.0">
+            <columns>
+                <TableColumn fx:id="npmColumn" text="NPM" />
+                <TableColumn fx:id="namaColumn" text="Nama" />
+                <TableColumn fx:id="jurusanColumn" prefWidth="100.0" text="Jurusan" />
+                <TableColumn fx:id="fakultasColumn" prefWidth="118.0" text="Fakultas" />
+                <TableColumn fx:id="universitasColumn" prefWidth="171.0" text="Universitas" />
+            </columns>
+        </TableView>
+        <Button fx:id="btnTambah" layoutX="25.0" layoutY="350.0" onAction="#tambahMahasiswa" text="Tambah Mahasiswa" />
+      <Label layoutX="207.0" layoutY="14.0" text="DATA MAHASISWA">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnUpdate" layoutX="452.0" layoutY="350.0" onAction="#updateMahasiswa" text="Update" />
+      <Button fx:id="btnDelete" layoutX="524.0" layoutY="350.0" onAction="#deleteMahasiswa" text="Delete" />
+    </children>
+</AnchorPane>
